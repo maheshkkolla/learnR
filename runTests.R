@@ -8,8 +8,8 @@ test.suite <- defineTestSuite("example",
 
 
 testResult <- runTestSuite(test.suite)
-# printTextProtocol(testResult)
-print(testResult)
+printTextProtocol(testResult)
+# print(testResult)
 
 # Run this command
 # R --slave --file=runTests.R
