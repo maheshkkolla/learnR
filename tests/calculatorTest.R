@@ -24,10 +24,14 @@ test.subtractionGivesDiffOfNultipleNumbers <- function() {
 	checkEqualsNumeric(subtraction(30, 10, 5), 15)
 }
 
-test.subtractionGivesDiffOfVector <- function() {
+test.subtractionGivesDiffOfNumbersInVector <- function() {
 	checkEqualsNumeric(subtraction(c(30, 10, 10)), 10)
 }
 
 test.subtractionGivesDiffOfSequence <- function() {
 	checkEqualsNumeric(subtraction(seq(20, 10, by = -2)), -50)
+}
+
+test.subtractionGivesDiffOfNumbersInMultipleVectors <- function() {
+	checkEquals(subtraction(c(10,20), c(5, 18)), -33)
 }
