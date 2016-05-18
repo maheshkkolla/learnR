@@ -11,5 +11,5 @@ testResult <- runTestSuite(test.suite)
 printTextProtocol(testResult)
 # print(testResult)
 
-# Run this command
+# Run this command to run tests
 # R --slave --file=runTests.R
